@@ -11,8 +11,7 @@
   <!-- OG TAG -->
   <meta property="og:title" content="Limitless Fitness, Your Community-Focused Gym">
   <meta property="og:description" content="Experience a personalized training, top equipment, and dynamic classes designed for all fitness levels with Limitless Fitness!">
-  <!-- Come back! -->
-  <meta property="og:image" content=""> 
+  <meta property="og:image" content=""> <!-- Come back! -->
   <meta property="og:url" content="https://www.LimitlessFitness.com">
 
   <!-- OG for Twitter -->
@@ -21,8 +20,7 @@
   <meta name="twitter:creator" content="@LimitlessFitness">
   <meta name="twitter:title" content="Limitless Fitness, Your Community-Focused Gym">
   <meta name="twitter:description" content="Experience a personalized training, top equipment, and dynamic classes designed for all fitness levels with Limitless Fitness!">
-  <!-- Come back! -->
-  <meta name="twitter:image" content="">
+  <meta name="twitter:image" content=""> <!-- Come back! -->
 </head>
 <body>
   <a href="#main">Skip to main content</a>
@@ -43,6 +41,9 @@
 <!-- add responsive images for resolution switching -->
     
       src="images/facility.jpg"
+    <picture>
+      <img src="images/facility.jpg" alt="">
+    </picture>
 
   </header>
   <nav>
@@ -114,16 +115,27 @@
           <!-- Labels for all inputs
           for attribute matching id attribute
           appropriate type values -->
-          Full Name
-          Email Address
-          Phone Number
-          Membership Type
-            Select a Membership Option
-            Monthly Membership
-            Annual Membership
-            Family & Group Plans
-          Tell us about your fitness goals:
-          Submit
+          <label for="fname">Full Name: </label>
+          <input type="text" id="fname" name="fname" required autocomplete="on">
+
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required autocomplete="on">
+          
+          <label for="number">Phone Number: </label>
+          <input type="tel" id="number" name="number" required autocomplete="on">
+
+          <label for="membership">Membership Type</label>
+          <select name="membership" id="membership" required>
+            <option value="">Select a Membership Option</option>
+            <option value="monthly">Monthly Membership</option>
+            <option value="annual">Annual Membership</option>
+            <option value="familyAndGroup">Family & Group Plans</option>
+          </select>
+
+          <label for="goals">Tell us about your fitness goals: </label>
+          <textarea id="goals" name="goals" style="resize: none;"></textarea>
+
+          <input type="submit" value="Submit">
         </form>
       </section>
     </section>
