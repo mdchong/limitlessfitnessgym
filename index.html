@@ -11,7 +11,7 @@
   <!-- OG TAG -->
   <meta property="og:title" content="Limitless Fitness, Your Community-Focused Gym">
   <meta property="og:description" content="Experience a personalized training, top equipment, and dynamic classes designed for all fitness levels with Limitless Fitness!">
-  <meta property="og:image" content=""> <!-- Come back! -->
+  <meta property="og:image" content=""> 
   <meta property="og:url" content="https://www.LimitlessFitness.com">
 
   <!-- OG for Twitter -->
@@ -20,7 +20,9 @@
   <meta name="twitter:creator" content="@LimitlessFitness">
   <meta name="twitter:title" content="Limitless Fitness, Your Community-Focused Gym">
   <meta name="twitter:description" content="Experience a personalized training, top equipment, and dynamic classes designed for all fitness levels with Limitless Fitness!">
-  <meta name="twitter:image" content=""> <!-- Come back! -->
+  <meta name="twitter:image" content="">
+
+  <title>Limitless Fitness</title>
 </head>
 <body>
   <a href="#main">Skip to main content</a>
@@ -37,12 +39,10 @@
     <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
     <picture>
-      <img src="images/facility.jpg" alt="">
+      <source media="(min-width: 768px)" srcset="images/facility-768w.jpg">
+      <source media="(min-width: 320px)" srcset="images/facility-320w.jpg">
+      <img src="images/facility.jpg" alt="Dark theme image of the facility with machines near the window and fitness equipment">
     </picture>
 
   </header>
@@ -81,9 +81,11 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/classes-768w.jpg">
+        <source media="(min-width: 320px)" srcset="images/classes-320w.jpg">
+        <img src="images/classes.jpg" alt="Dark theme image of clients working out">
+      </picture>
 
     </section>
     <section>
@@ -93,9 +95,11 @@
         Ready for a change?
       </p> 
       <a href="#">Book a Free Consultation today!</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/dumbells-768w.jpg">
+        <source media="(min-width: 320px)" srcset="images/dumbells-320w.jpg">
+        <img src="images/dumbells.jpg" alt="Dumbells on a rack equipped to be used">
+      </picture>
 
     </section>
     <section>
@@ -109,12 +113,7 @@
       <section id="membership-form">
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
-
-        <!-- Finish form   -->
-        <form action="post" method="https://wp.zybooks.com/form-viewer.php">
-          <!-- Labels for all inputs
-          for attribute matching id attribute
-          appropriate type values -->
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
           <label for="fname">Full Name: </label>
           <input type="text" id="fname" name="fname" required autocomplete="on">
 
